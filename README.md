@@ -104,3 +104,26 @@ Le capteur de température et d'humidité DHT22 (ou AM2302) communique avec un m
 >## PCB
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190436275-277f1379-e3e4-44cb-ac11-36329d5bdc99.png" width="30%"></div>
 
+># Partie Software 
+>## Logiciel utlisé :
+- Arduino Ide
+- KiCad pour la conception du scheild
+
+>## Bébliotheque ulisé :
+il faut installer ces 2 bébliotheque 
+- **[Installer LoRa.h: Cliquer ici](https://github.com/sandeepmistry/arduino-LoRa/archive/refs/heads/master.zip)**
+- **[Installer DHT.h: Cliquer ici](https://github.com/adafruit/DHT-sensor-library/archive/refs/heads/master.zip)**
+>## installer les 2 bébiothéque dans l'IDE 
+>### 1er étape
+<div align="center"><img src="https://user-images.githubusercontent.com/93054393/190475276-202afbed-32d5-47ca-b253-c10246b2674f.png" width="30%"></div>
+>### 2éme étape
+<div align="center"><img src="https://user-images.githubusercontent.com/93054393/190475697-75b1eeac-70e0-4105-a5cf-196d42214e3e.png" width="30%"></div>
+>### 3éme étape
+<div align="center"><img src="https://user-images.githubusercontent.com/93054393/190476033-cd74cec8-600a-4d20-acb2-dcefdb0c4b09.png" width="30%"></div>
+>## Copier les 2 code du l'emmetteur et récepteur et les coller dans l'Arduino IDE :
+
+
+- **[Code de la noeud émmeteur](https://github.com/aziz-bouslimi/DHT11-LoRa-RFM95-Arduino-/blob/main/LoRa_sender.ino)**
+
+- **[Code de la noeud récepteur](https://github.com/aziz-bouslimi/DHT11-LoRa-RFM95-Arduino-/blob/main/lora_received.ino)**
+
