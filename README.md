@@ -81,13 +81,26 @@ Nous avons choisi le module car il est le plus simple à utiliser, puissant et i
 
 Le capteur de température et d'humidité DHT22 (ou AM2302) communique avec un microcontrôleur via un port série. Le capteur est calibré et ne nécessite pas de composants supplémentaires pour pouvoir être utilisé.
 
-* Alimentation: 3,3 à 6 Vcc
-* Consommation maxi: 1,5 mA
-- Plage de mesure:
-* température: -40 à +80 °C
-* humidité: 0 à 100 % RH
-- Précision:
-* température: ± 0,5 °C
-* humidité: ± 2 % RH
+<div align="center"><img src="https://user-images.githubusercontent.com/93054393/190423863-b9da061d-b2a3-40d3-898a-6193feb491da.png" width="30%"></div>
 
+>## Caractérisitque 
+
+|Alimentation	|Consommation maxi|Plage de mesure|Précision|
+|-----|----|----|----|
+|3,3 à 6 Vcc	|1,5 mA|température: -40 à +80 °C humidité: 0 à 100 % RH|	(température: ± 0,5 °C humidité: ± 2 % RH)| 
+
+>## Cablage du Circuit (RFM95 Avec Arduino)
+
+|Arduino Uno Pins|12|11|10|13|9|2|3.3V|GND|
+|-----|----|----|----|----|----|----|----|----|
+|LoRa RFM95|Miso|Mosi|Chip select|CLK|RESET|DIO0|3.3V|GND| 
+
+>## Cablage du Circuit (DHT22 Avec Arduino)
+
+|Arduino Uno Pins|A0|5V|GND|
+|-----|----|----|----|
+|DHT22|DATA|VCC|GND|
+
+>## PCB
+<div align="center"><img src="https://user-images.githubusercontent.com/93054393/190436275-277f1379-e3e4-44cb-ac11-36329d5bdc99.png" width="30%"></div>
 
