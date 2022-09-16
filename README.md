@@ -4,6 +4,7 @@
 
 ># Contact
 
+
 - **contact@makerlab.tn**
 - **[Linkedin](https://www.linkedin.com/in/kais-alila-3a1b35163/)**
 - **[Facebook](https://www.facebook.com/tunmakerlab/)**
@@ -24,9 +25,12 @@ Envoyer des données (température et humidité) avec une Communication p2p (pea
 * 2 Carte shield (LoRa RFM95 + capteur DTH22)
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190388701-9862c59e-3066-46de-9c10-99901077d5ed.PNG" width="%"></div>
 <div align="center"><i>Composants nécessaires </i></div>
+
 >## Montage
+
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190398428-b4fbe9e7-af63-4c43-a0a1-9d0795f238db.jpg" width="50%"></div>
 <div align="center"><i>Assemblage du scheild avec Arduino </i></div>
+
 >## Documentation 
 
 ### C'est quoi le LoRa ?
@@ -37,6 +41,7 @@ Envoyer des données (température et humidité) avec une Communication p2p (pea
 
 
 >### Description du LoRa
+
 LoRa “ Long Range “ est un protocole réseau qui permet de réaliser une communication à longue portée avec une faible consommation d’énergie à un débit compris entre 0,3 et 50 Kbps. 
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190405669-a5fb0916-d302-45e4-a6b8-1183198033d9.png" width="50%"></div>
 
@@ -58,18 +63,22 @@ En choisissant les configurations utilisant un minimum de données , cela va nou
 de réduire la taille du paquet dans le but de simplifier son décodage .
 
 >### Avantages du LoRa
+
 * Détection RF automatique et CAO avec AFC ultra-rapide
 * Vitesse de transmission configurable	
 * Une technologie bidirectionnelle, à ultra-longue portée et ultraprécise
 * Avec le protocole LoRa, fiabilité et économies maximales
 * Une architecture réseau totalement ouverte
+
 >### Le Moducle LoRa choisi :
+
 Nous avons choisi le module car il est le plus simple à utiliser, puissant et il est très connu et très utilisé, il porte sur une plus longue distance. Les cartes qui sont disponibles au marché assemblées et testées avec un connecteur.
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190407259-75caeb74-bb86-47aa-815a-f047ebc86953.png" width="50%"></div>
 <div align="center"><i>Le module LoTa RFM95 </i></div>
 
 >###	Mise en œuvre de la communication via RFM95 :
+
  Le RFM95 est un module LoRa émetteur-récepteur admet 16 broches il a le privilège d’être connecté à n’importe quel microcontrôleur via la liaison série (SPI). Il est un composant monté en surface. Il possède les caractéristiques suivantes : 
 
 * Tension de fonctionnement : 3.3V et une fréquence d’horloge : 32 MHz
@@ -86,6 +95,7 @@ Le capteur de température et d'humidité DHT22 (ou AM2302) communique avec un m
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190423863-b9da061d-b2a3-40d3-898a-6193feb491da.png" width="50%"></div>
 <div align="center"><i>Le capteur de température et humidité DHT22 </i></div>
+
 >## Caractérisitque 
 
 |Alimentation	|Consommation maxi|Plage de mesure|Précision|
@@ -105,16 +115,21 @@ Le capteur de température et d'humidité DHT22 (ou AM2302) communique avec un m
 |DHT22|DATA|VCC|GND|
 
 >## PCB
+
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190436275-277f1379-e3e4-44cb-ac11-36329d5bdc99.png" width="50%"></div>
 <div align="center"><i>Conception de la carte scheild avec KiCad </i></div>
+
 ># Partie Software : 
 
 >## Logiciel utlisé :
+
 - Arduino Ide
 - KiCad pour la conception du scheild
 
 >## Bébliotheque utilisé :
+
 il faut installer ces 2 bébliotheque 
+
 - **[Installer LoRa.h : Cliquer ici](https://github.com/sandeepmistry/arduino-LoRa/archive/refs/heads/master.zip)**
 - **[Installer DHT.h : Cliquer ici](https://github.com/adafruit/DHT-sensor-library/archive/refs/heads/master.zip)**
 
@@ -122,14 +137,20 @@ il faut installer ces 2 bébliotheque
 
 
 >### 1er étape : 
+
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190475276-202afbed-32d5-47ca-b253-c10246b2674f.png" width="70%"></div>
 <div align="center"><i>1er étape </i></div>
+
 >### 2éme étape :
+
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190475697-75b1eeac-70e0-4105-a5cf-196d42214e3e.png" width="70%"></div>
 <div align="center"><i>2éme étape </i></div>
+
 >### 3éme étape :
+
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190476033-cd74cec8-600a-4d20-acb2-dcefdb0c4b09.png" width="70%"></div>
 <div align="center"><i>3éme étape </i></div>
+
 >## Copier les 2 code du l'emmetteur et récepteur et les coller dans l'Arduino IDE :
 
 
@@ -138,6 +159,7 @@ il faut installer ces 2 bébliotheque
 - **[Code de la noeud récepteur](https://github.com/aziz-bouslimi/DHT11-LoRa-RFM95-Arduino-/blob/main/lora_received.ino)**
 
 >## Partie Code
+
 --------------------------------------------------
 
 * Partie émmetteur
@@ -658,6 +680,6 @@ Les valeurs prises en charge sont comprises entre '0' et '6'. Si le gain est de 
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190636489-a2f60fad-5c9f-4726-8932-4433d60482f4.jpg" width="50%"></div>
 <div align="center"><i>Validation fonctionnement du noeud récepteur (Received ) </i></div>
 
-Profitez-en
+
 
 <a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?lines=Profitez%20-en;&font=Fira%20Code&center=true&width=440&height=45&color=221dab&vCenter=true&size=22&pause=10"></a>
