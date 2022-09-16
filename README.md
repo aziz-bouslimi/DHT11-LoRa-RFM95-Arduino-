@@ -657,3 +657,7 @@ Les valeurs prises en charge sont comprises entre '0' et '6'. Si le gain est de 
 
 <div align="center"><img src="https://user-images.githubusercontent.com/93054393/190636489-a2f60fad-5c9f-4726-8932-4433d60482f4.jpg" width="50%"></div>
 <div align="center"><i>Validation fonctionnement du noeud récepteur (Received ) </i></div>
+
+Profitez-en
+
+<a href="https://github.com/DenverCoder1/readme-typing-svg"><img src="https://readme-typing-svg.herokuapp.com/?lines=Profitez%20-en;&font=Fira%20Code&center=true&width=440&height=45&color=221dab&vCenter=true&size=22&pause=10"></a>
